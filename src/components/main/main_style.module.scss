@@ -1,0 +1,236 @@
+.main {
+  flex: 1;
+  margin: auto;
+  width: 100%;
+ z-index: 1;
+  background:#FFFFFFFF;
+  margin-bottom: 0;
+  font-family: 'Montserrat';
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    .article_banner {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      margin: 100px 0;
+
+      .article {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 590px;
+        text-align: start;
+        padding: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        span {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 37px;
+          color: #587729FF;
+          text-align: start;
+        }
+
+        h1 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 73px;
+          color: #587729FF;
+          margin: 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+      }
+    }
+
+    .main_btn_group {
+      display: flex;
+      gap: 20px;
+
+      .btn {
+        width: 120px;
+        height: 35px;
+        background: #25523B;
+        border: none;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        box-shadow: 0px 5px 10px 0px rgba(57, 117, 50, 0.5);
+        cursor: pointer;
+
+        &:hover {
+          background: #AFC878FF;
+        }
+
+        &:active {
+          box-shadow: inset 0px 5px 10px 5px #33691EFF;
+          transform: translate(-5px);
+
+
+        }
+      }
+
+      .link_btn {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+
+  }
+
+}
+
+
+.slider {
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  .slider_btn_previos,
+  .slider_btn_next {
+    position: relative;
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  .cards_wrapper {
+    display: flex;
+    transition: transform 0.5s;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1306px;
+
+    flex-wrap: nowrap;
+    padding: 30px;
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      height: 650px;
+      border: none;
+      border-radius: 8px;
+      background: #FFFDF3FF;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      padding: 5px 5px;
+      color: #25523B;
+      line-height: 22px;
+
+      .card_img {
+        border-radius: 8px;
+        width: 297px;
+        height: 320px;
+      }
+
+      .card_description {
+        padding-left: 30px;
+        line-height: 32px;
+      }
+
+      .product_name {
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .product_price {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .product_description {
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      .card_btn {
+        position: absolute;
+        bottom: 25px;
+        width: 200px;
+        height: 35px;
+        background: #25523B;
+        border: none;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        box-shadow: 0px 5px 10px 0px rgba(57, 117, 50, 0.5);
+        cursor: pointer;
+      }
+
+      .card_btn:hover {
+        background: #AFC878FF;
+        color: #25523B;
+      }
+
+      .card_btn:active {
+        box-shadow: inset 0px 5px 10px 5px rgba(57, 117, 50, 0.5);
+        transform: translate(-5px);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+// @media (max-width: 1024px) {
+//   .main_container {
+//     max-width: 100%;
+//   }
+
+//   .article {
+//     margin-left: 12px;
+//   }
+
+//   .article h1 {
+
+//     font-size: 50px;
+//     line-height: 63px;
+
+//   }
+
+//   .article p {
+//     font-size: 16px;
+//   }
+
+
+//   .card_description {
+//     padding-left: 10px;
+//   }
+
+//   .product_description {
+//     font-size: 16px;
+//     max-width: 270px;
+//     overflow: hidden;
+//   }
+// }

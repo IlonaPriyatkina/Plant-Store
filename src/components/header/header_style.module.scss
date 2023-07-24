@@ -1,0 +1,140 @@
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px; 
+  z-index: 5;
+  background: linear-gradient( #DCE779FF 30%,#FFFFFFFF);
+  font-family: 'Montserrat';
+
+  &_container {
+    margin: 0 auto;
+    max-width: 1279px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 30px 30px 0;
+
+
+    .logo_group {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      bottom: 20px;
+
+      &__logo_img {
+        width: 50px;
+      }
+
+      &__logo_name {
+        width: 80px;
+        margin-top: 18px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 18px;
+        color: #1B6219FF;
+        cursor: pointer;
+      }
+    }
+
+    .nav {
+      font-size: 15px;
+      line-height: 18px;
+      color: #25523B;
+
+      .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .header_li {
+          padding: 10px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background: #AFC878FF;
+          }
+
+          &:active {
+            background: rgb(144, 167, 94);
+          }
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 22px;
+          line-height: 18px;
+          color: #25523B;
+
+          &:active {
+            color: #f7f7f7;
+          }
+        }
+      }
+    }
+
+  
+  }
+
+  .invisible_nav {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #F3FFDBFF, #D6F4B3FF);
+  }
+
+  .button_burgermenu {
+    display: none;
+  }
+
+  .mini_list {
+    list-style: none;
+    margin: 50px 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 884px) {
+    .nav {
+      display: none;
+    }
+
+    .header_btn_group {
+      display: none;
+    }
+
+    .mini_nav {
+      display: block;
+    }
+
+    .button_burgermenu {
+      display: block;
+      z-index: 99;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background: none;
+      border: none;
+      padding-top: 6px;
+      cursor: pointer;
+
+      &:active {
+        background: #AFC878FF;
+        border-radius: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 650px;
+  border: none;
+  border-radius: 8px;
+  background: #FFFDF3FF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  padding: 10px 5px;
+  color: #25523B;
+  line-height: 22px;
+  font-family: 'Montserrat';
+
+  &_img {
+    border-radius: 8px;
+    width: 368px;
+    height: 350px;
+  }
+
+  &_description {
+    width: 360px;
+    line-height: 32px;
+    align-items: start;
+  
+ 
+    .product_name {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .product_price {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .product_description {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+
+  &_btn {
+    position: absolute;
+    bottom: 35px;
+    width: 200px;
+    height: 35px;
+    background: #587729FF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 10px 0px rgba(57, 117, 50, 0.5);
+    cursor: pointer;
+  }
+
+  &_btn:hover {
+    background: #AFC878FF;
+    color: #25523B;
+  }
+
+  &_btn:active {
+    box-shadow: inset 0px 5px 10px 5px rgba(57, 117, 50, 0.5);
+    transform: translate(-5px);
+  }
+}
